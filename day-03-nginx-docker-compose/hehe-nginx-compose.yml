@@ -1,10 +1,11 @@
 version: "3"
 services:
   client:
-    image: nginx
+    # file image custom được build ra từ Dockerfile theo các bước trong README.md
+    image: hehe-nginx
     volumes:
       # copy toàn bộ sattic file cho vào thư mục của nginx
-      # tương tự như lệnh COPY trong dockerFile
+      # tương tự như lệnh COPY trong Dockerfile
       - ./static:/usr/share/nginx/html
     # port start sau local host là 1234
     ports:

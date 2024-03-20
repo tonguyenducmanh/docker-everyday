@@ -2,5 +2,5 @@
 FROM nginx
 # copy config vào trong nginx
 COPY nginx.conf /etc/nginx/nginx.conf
-# copy static html vào cho nginx
-COPY /static /usr/share/nginx/html
+# phần này chuyển vào cho docker compose làm việc
+# COPY /static /usr/share/nginx/html
