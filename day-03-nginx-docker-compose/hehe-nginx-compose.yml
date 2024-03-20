@@ -1,0 +1,14 @@
+version: "3"
+services:
+  client:
+    image: nginx
+    volumes:
+      # copy toàn bộ sattic file cho vào thư mục của nginx
+      # tương tự như lệnh COPY trong dockerFile
+      - ./static:/usr/share/nginx/html
+    # port start sau local host là 1234
+    ports:
+      - "1234:80"
+    environment:
+      - NGINX_HOST=foobar.com
+      - NGINX_PORT=80
