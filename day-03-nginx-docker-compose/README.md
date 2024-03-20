@@ -50,6 +50,7 @@ docker compose -f hehe-nginx-compose.yml up -d
 
 ```
 docker compose -f hehe-nginx-compose.yml down
+docker image remove hehe-nginx
 ```
 
 Kết quả sau khi docker compose up thành công trong app Docker
